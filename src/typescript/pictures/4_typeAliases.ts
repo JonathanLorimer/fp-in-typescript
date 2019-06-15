@@ -1,3 +1,3 @@
-type Firstname = string
-type Lastname = string
+export type Firstname = string
+export type Lastname = string
 type Age = number

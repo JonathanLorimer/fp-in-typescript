@@ -1,3 +1,5 @@
+export {}
+
 interface ProgrammingLanguage {
 	name: string
 	functionalSupport: boolean

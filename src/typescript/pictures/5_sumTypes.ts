@@ -1,5 +1,4 @@
-type Firstname = string
-type Lastname = string
+import { Firstname, Lastname } from "./4_typeAliases"
 
-type Name = Firstname | Lastname
-type FlexibleAge = number | string
+export type Name = Firstname | Lastname
+export type FlexibleAge = number | string

@@ -1,13 +1,23 @@
-interface Left<L> {
-	tag: "left"
-	reason: L
-}
-const left = <L>(reason: L): Left<L> => ({ tag: "left", reason })
+import { Functor } from "./index"
 
-interface Right<R> {
+interface Wrong<W, R> extends Functor<R> {
+	tag: "wrong"
+	reason: W
+}
+const wrong = <W, R>(reason: W): Wrong<W, R> => ({
+	tag: "wrong",
+	reason,
+	map: (_) => wrong(reason),
+})
+
+interface Right<W, R> extends Functor<R> {
 	tag: "right"
 	value: R
 }
-const right = <R>(value: R): Right<R> => ({ tag: "right", value })
+const right = <W, R>(value: R): Right<W, R> => ({
+	tag: "right",
+	value,
+	map: (f) => right(f(value)),
+})
 
-type Either<L, R> = Left<L> | Right<R>
+type Either<W, R> = Wrong<W, R> | Right<W, R>

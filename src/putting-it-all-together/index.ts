@@ -21,3 +21,7 @@ export interface Semigroup<T> {
 const stringSemigroup: Semigroup<string> = {
 	concat: (x) => (y) => x + y,
 }
+
+const arraySemigroup: Semigroup<number[]> = {
+	concat: (x) => (y) => [...x, ...y],
+}

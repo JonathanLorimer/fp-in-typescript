@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const javascript = {
+    name: "ECMAScript",
+    functionalSupport: true,
+    version: 9,
+};
+const ruby = {
+    name: "Ruby",
+    functionalSupport: true,
+    version: 2.6,
+};
+const java = {
+    name: "java",
+    functionalSupport: false,
+    version: 7,
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMl9pbnRlcmZhY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIyX2ludGVyZmFjZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQVFBLE1BQU0sVUFBVSxHQUF3QjtJQUN2QyxJQUFJLEVBQUUsWUFBWTtJQUNsQixpQkFBaUIsRUFBRSxJQUFJO0lBQ3ZCLE9BQU8sRUFBRSxDQUFDO0NBQ1YsQ0FBQTtBQUNELE1BQU0sSUFBSSxHQUF3QjtJQUNqQyxJQUFJLEVBQUUsTUFBTTtJQUNaLGlCQUFpQixFQUFFLElBQUk7SUFDdkIsT0FBTyxFQUFFLEdBQUc7Q0FDWixDQUFBO0FBRUQsTUFBTSxJQUFJLEdBQXdCO0lBQ2pDLElBQUksRUFBRSxNQUFNO0lBQ1osaUJBQWlCLEVBQUUsS0FBSztJQUN4QixPQUFPLEVBQUUsQ0FBQztDQUNWLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQge31cblxuaW50ZXJmYWNlIFByb2dyYW1taW5nTGFuZ3VhZ2Uge1xuXHRuYW1lOiBzdHJpbmdcblx0ZnVuY3Rpb25hbFN1cHBvcnQ6IGJvb2xlYW5cblx0dmVyc2lvbjogbnVtYmVyXG59XG5cbmNvbnN0IGphdmFzY3JpcHQ6IFByb2dyYW1taW5nTGFuZ3VhZ2UgPSB7XG5cdG5hbWU6IFwiRUNNQVNjcmlwdFwiLFxuXHRmdW5jdGlvbmFsU3VwcG9ydDogdHJ1ZSxcblx0dmVyc2lvbjogOSxcbn1cbmNvbnN0IHJ1Ynk6IFByb2dyYW1taW5nTGFuZ3VhZ2UgPSB7XG5cdG5hbWU6IFwiUnVieVwiLFxuXHRmdW5jdGlvbmFsU3VwcG9ydDogdHJ1ZSxcblx0dmVyc2lvbjogMi42LFxufVxuXG5jb25zdCBqYXZhOiBQcm9ncmFtbWluZ0xhbmd1YWdlID0ge1xuXHRuYW1lOiBcImphdmFcIixcblx0ZnVuY3Rpb25hbFN1cHBvcnQ6IGZhbHNlLFxuXHR2ZXJzaW9uOiA3LFxufVxuIl19

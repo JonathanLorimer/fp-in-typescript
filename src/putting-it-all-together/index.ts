@@ -1,27 +1,29 @@
 export {}
 
-// Identity :: a -> a
-type Identity = <T>(x: T) => T
-const identity: Identity = undefined
+// Unknown1 :: a -> a
+type Unkown1 = <T>(x: T) => T
 
-// Constant :: a -> b -> a
-type Constant = <T, V>(x: T) => (y: V) => T
-const constant: Constant = undefined
+// Unknown2 :: a -> b -> a
+type Unkown2 = <T, V>(x: T) => (y: V) => T
 
-// Map :: (a -> b) -> f a -> f b
-export interface Functor<T> {
-	map: <U>(f: (x: T) => U) => Functor<U>
+// Unknown3 :: (a -> b) -> f a -> f b
+export interface Unknown3<T> {
+	unknown3: <U>(f: (x: T) => U) => Unknown3<U>
 }
 
-// Append :: a -> a -> a
-export interface Semigroup<T> {
-	concat: (x: T) => (y: T) => T
+// Unknown4 :: a -> a -> a
+export interface Unknown4<T> {
+	unknown4: (x: T) => (y: T) => T
 }
 
-const stringSemigroup: Semigroup<string> = {
-	concat: (x) => (y) => x + y,
+const stringUnknown4: Unknown4<string> = {
+	unknown4: undefined,
 }
 
-const arraySemigroup: Semigroup<number[]> = {
-	concat: (x) => (y) => [...x, ...y],
+const arrayUnknown4: Unknown4<number[]> = {
+	unknown4: undefined,
+}
+
+const booleanUnknown4: Unknown4<boolean> = {
+	unknown4: undefined,
 }

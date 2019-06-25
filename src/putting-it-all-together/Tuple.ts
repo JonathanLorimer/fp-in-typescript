@@ -1,6 +1,6 @@
-import { Functor } from "./index"
+import { Unknown3 } from "./index"
 
-interface Pair<T, U> extends Functor<U> {
+interface Pair<T, U> extends Unknown3<U> {
 	first: T
 	second: U
 }
@@ -8,5 +8,5 @@ interface Pair<T, U> extends Functor<U> {
 const pair = <T, U>(first: T) => (second: U): Pair<T, U> => ({
 	first,
 	second,
-	map: undefined,
+	unknown3: undefined,
 })

@@ -1,23 +1,23 @@
-import { Functor } from "./index"
+import { Unknown3 } from "./index"
 
-interface Wrong<W, R> extends Functor<R> {
+interface Wrong<W, R> extends Unknown3<R> {
 	tag: "wrong"
 	reason: W
 }
 const wrong = <W, R>(reason: W): Wrong<W, R> => ({
 	tag: "wrong",
 	reason,
-	map: (_) => wrong(reason),
+	unknown3: undefined,
 })
 
-interface Right<W, R> extends Functor<R> {
+interface Right<W, R> extends Unknown3<R> {
 	tag: "right"
 	value: R
 }
 const right = <W, R>(value: R): Right<W, R> => ({
 	tag: "right",
 	value,
-	map: (f) => right(f(value)),
+	unknown3: undefined,
 })
 
 type Either<W, R> = Wrong<W, R> | Right<W, R>

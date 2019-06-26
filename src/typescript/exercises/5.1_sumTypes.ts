@@ -1,9 +1,12 @@
+export {}
 /*
 Task: Create a function that takes a string "firstname" or
-"lastname" and returns the correct value
+"lastname" and a Person and gets the Firstname or Lastname property
+off of the Person object
 */
-import { Firstname, Lastname } from "../pictures/4_typeAliases"
-import { Name, FlexibleAge } from "../pictures/5_sumTypes"
+type Firstname = string
+type Lastname = string
+type FlexibleAge = number | string
 
 interface Person {
 	firstname: Firstname

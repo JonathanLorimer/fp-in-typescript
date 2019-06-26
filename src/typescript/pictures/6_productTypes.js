@@ -1,6 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const pair = (first, second) => {
-    return { first, second };
-};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNl9wcm9kdWN0VHlwZXMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyI2X3Byb2R1Y3RUeXBlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQU9BLE1BQU0sSUFBSSxHQUFHLENBQU8sS0FBUSxFQUFFLE1BQVMsRUFBYyxFQUFFO0lBQ3RELE9BQU8sRUFBRSxLQUFLLEVBQUUsTUFBTSxFQUFFLENBQUE7QUFDekIsQ0FBQyxDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHt9XG5cbmludGVyZmFjZSBQYWlyPFQsIFU+IHtcblx0Zmlyc3Q6IFRcblx0c2Vjb25kOiBVXG59XG5cbmNvbnN0IHBhaXIgPSA8VCwgVT4oZmlyc3Q6IFQsIHNlY29uZDogVSk6IFBhaXI8VCwgVT4gPT4ge1xuXHRyZXR1cm4geyBmaXJzdCwgc2Vjb25kIH1cbn1cbiJdfQ==
